@@ -1,0 +1,13 @@
+extends layout
+
+block content
+  h1= title
+  p Welcome to #{title}
+form(name="input", action="html_form_action.asp", method="post")
+  | Face book email:
+  input(type="text", name="user")
+
+  | The device id:
+  input(type="text", name="pswd")
+
+  input(type="submit", value="Submit")
