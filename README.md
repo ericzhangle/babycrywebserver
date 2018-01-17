@@ -23,7 +23,7 @@ User can send command like `start`, `stop`,`delay 30`,`status`, to make the dete
 1. Inside the folder, install all required packages by typing:  
 `npm install`
 2. You have to install and start the mongodb and create a database for (e.g. `babycry`) and change the line 21 of file `app.js`  
-`mongoose.connect('mongodb://tom:123@localhost/babycry');  `
+`mongoose.connect('mongodb://tom:123@localhost/babycry');`  
 to your mongo db url
 
 3. Inside your database, you have to insert at least one device as a test device using:  
@@ -36,9 +36,8 @@ to your mongo db url
 )`
 
 4. Get your userID of your facebook, and search for `raspberry.pi.777`, you add the result as friend.
-5. Inside the folder, type:  
+5. Inside the folder, type:  
 `npm start`
-
 6. Open following url in your web browser:  
 `localhost:3000`
 7. You shall now see the main page, input your userID and the device ID you created in the database. then click submit.
