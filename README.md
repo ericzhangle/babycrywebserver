@@ -7,19 +7,17 @@ These above mentioned functions can be achieved through this web server.
 
 ## The functions of this web server:
 
-1. **Accept the user register request from the main page** </br>
+**1. Accept the user register request from the main page** </br>
    Because the notification and commands are sent through the service of facebook messenger, so the web server keeps a virtual facebook account "raspberry pi" active as the detector to receive command and send alerts. But in order for it to work, the facebook account of the user must be known, so user has to register with his facebook userID and the device ID of the detector on the main page, the the web server is responsible to deal with this act and use "phantom" (a headless web browser) to simulate actions to add the user as friend.
 
-2. Accept the initial checking of userID from baby detector.
-
+**2. Accept the initial checking of userID from baby detector** </br>
    When the baby detector start, it will send "get" request to the server to check weather any user has registered for this device, the web server will check the database and give proper feedback, if no user has registered for the device, the detector won't start
 
-3. Accept the posted alert from baby detector and forward it to the user.
-
+**3. Accept the posted alert from baby detector and forward it to the user** </br>
    When the baby detector detects baby cry, it will record sound for 10 seconds, then send the wav file to the user for double confirm, this wav file is accepted by this web server then forward to the user through a message using messenger.
 
-		4. Listening for any command from user to control the detector.
-   User can send command like "start", "stop","delay 30","status", to make the detector start, stop, delay detecting for 30 min, and query the current status. the web server listens to this command and make the detector execute accordingly.
+**4. Listening for any command from user to control the detector** </br>
+   User can send command like `start`, `stop`,"delay 30","status", to make the detector start, stop, delay detecting for 30 min, and query the current status. the web server listens to this command and make the detector execute accordingly.
 
 ## How to use
 1. Inside the folder, install all required packages by typing:
