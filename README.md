@@ -14,10 +14,10 @@ Because the notification and commands are sent through the service of facebook m
 When the baby detector start, it will send `get`request to the server to check weather any user has registered for this device, the web server will check the database and give proper feedback, if no user has registered for the device, the detector won't start
 
 3. **Accept the posted alert from baby detector and forward it to the user**  
-   When the baby detector detects baby cry, it will record sound for 10 seconds, then send the `wav` file to the user for double confirm, this wav file is accepted by this web server then forward to the user through a message using messenger.
+When the baby detector detects baby cry, it will record sound for 10 seconds, then send the `wav` file to the user for double confirm, this wav file is accepted by this web server then forward to the user through a message using messenger.
 
 4. **Listening for any command from user to control the detector**  
-   User can send command like `start`, `stop`,`delay 30`,`status`, to make the detector start, stop, delay detecting for 30 min, and query the current status. the web server listens to this command and make the detector execute accordingly.
+User can send command like `start`, `stop`,`delay 30`,`status`, to make the detector start, stop, delay detecting for 30 min, and query the current status. the web server listens to this command and make the detector execute accordingly.
 
 ## How to use
 1. Inside the folder, install all required packages by typing:
