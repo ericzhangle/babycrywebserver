@@ -26,14 +26,14 @@ User can send command like `start`, `stop`,`delay 30`,`status`, to make the dete
 mongoose.connect('mongodb://tom:123@localhost/babycry');
 to your mongo db url
 
-3. Inside your database, you have to insert at least one device as a test device using:
-`db.devices.insertOne(  
+3. Inside your database, you have to insert at least one device as a test device using:  
+```db.devices.insertOne(  
    { 	
    "deviceID" : 12345678,
 	"nextTime":"",
 	"status":""
 	}
-)`
+)```
 
 4. Get your userID of your facebook, and search for "raspberry.pi.777", you add the result as friend.
 5. Inside the folder, type:  
