@@ -1,7 +1,5 @@
 # babycrywebserver
 The web server to server baby cry detector based on the service of facebook
-# babycrywebserver
-The web server to server baby cry detector based on the service of facebook
 ## Introduction
 This web server is developed to support the functions of the baby cry detector in the IOT project.
 The baby cry detector can detect baby cry and send alert notification to the receiver, and the receiver in turn can send command, for e.g. to stop, start the detector remotely.
@@ -9,8 +7,7 @@ These above mentioned functions can be achieved through this web server.
 
 ## The functions of this web server:
 
-1. Accept the user register request from the main page.
-
+1. **Accept the user register request from the main page**
    Because the notification and commands are sent through the service of facebook messenger, so the web server keeps a virtual facebook account "raspberry pi" active as the detector to receive command and send alerts. But in order for it to work, the facebook account of the user must be known, so user has to register with his facebook userID and the device ID of the detector on the main page, the the web server is responsible to deal with this act and use "phantom" (a headless web browser) to simulate actions to add the user as friend.
 
 2. Accept the initial checking of userID from baby detector.
