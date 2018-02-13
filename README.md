@@ -1,8 +1,8 @@
 # babycrywebserver
-The web server to server baby cry detector based on the service of facebook
+The web server to serve [baby cry detector](https://github.com/ericzhangle/babyCrySoundProcessing) based on the service of facebook, so they are intended to be used together.
 ## Introduction
-This web server is developed to support the functions of the baby cry detector in the IOT project.
-The baby cry detector can detect baby cry and send alert notification to the receiver, and the receiver in turn can send command, for e.g. to stop, start the detector remotely.
+This web server is developed to support the functions of the [baby cry detector](https://github.com/ericzhangle/babyCrySoundProcessing) in the IOT project.
+[baby cry detector](https://github.com/ericzhangle/babyCrySoundProcessing) can detect baby cry and send alert notification to the receiver, and the receiver in turn can send command, for e.g. to stop, start the detector remotely.
 These above mentioned functions can be achieved through this web server.
 
 ## The functions of this web server:
